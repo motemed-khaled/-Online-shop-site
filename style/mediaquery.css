@@ -114,6 +114,11 @@
 .special-offersec .offer{
     height: 200px;
 }
+.special-offersec .offer img {
+    max-width: 100%;
+    transition: 1s;
+    height: 100%;
+}
 /* end offer section */
 /* start vendor */
 .vendor{
