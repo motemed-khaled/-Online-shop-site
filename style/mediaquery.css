@@ -86,6 +86,9 @@
 .header .special-offer .offer{
     width: 100%;
 }
+.header .special-offer .offer img{
+    width: 100%;
+}
 /* end header and carsoul */
 /* start service */
 .services{
@@ -114,7 +117,7 @@
 .special-offersec .offer{
     height: 200px;
 }
-.special-offersec .offer img {
+.special-offersec .offer .img {
     max-width: 100%;
     transition: 1s;
     height: 100%;

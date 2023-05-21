@@ -812,7 +812,7 @@ body{
     margin-bottom: 30px;
     overflow: hidden;
 }
- .special-offersec .offer img{
+ .special-offersec .offer .img{
     max-width: 100%;
     transition: 1s;
 }
