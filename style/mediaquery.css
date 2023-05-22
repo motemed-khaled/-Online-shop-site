@@ -138,4 +138,25 @@
 
 }
 /* end footer */
+
+/* /////////////////////////////////////////////////////////////// */
+/* start shop page */
+.navegation{
+    padding: 7px 15px;
 }
+/* start shop page */
+.container-shop{
+    padding: 7px 15px;
+}
+/* start end nav */
+.end-nav{
+    padding: 7px 15px;
+}
+/* end end nav */
+}
+ @media(max-width:772px){
+    .container-shop{
+        padding: 7px 15px;
+        grid-template-columns: 1fr ;
+    }
+ }

@@ -12,14 +12,14 @@ document.getElementById("drop-three").addEventListener("click", () => {
 
 // start navbar
 // add class active in navbar link
-let allLi = document.querySelectorAll(".nav-bar .left .links li:not(.page)");
+let allLi = document.querySelectorAll(".nav-bar .left .links li a:not(.page) ");
 allLi.forEach((li) => {
     li.addEventListener("click", (e) => {
-        e.target.parentElement.querySelectorAll(".active").forEach(ele => {
-            ele.classList.remove("active");
-        })
+        e.target.parentElement.parentElement.querySelectorAll(".active").forEach(ele => {
+        ele.classList.remove("active");
+        });
         e.target.classList.add("active");
-    })
+    });
 });
 // start dropdown menu
 document.querySelector(".nav-bar .left .categories .cat").addEventListener("click", () => {
@@ -41,4 +41,15 @@ document.querySelector(".nav-bar .left .categories .cat-dropDown .dressDown").cl
 document.querySelector(".nav-bar .mobile-bars").addEventListener("click", () => {
     document.querySelector(".nav-bar .left .links").classList.toggle("show");
 }) 
-// start navbar 
+// start navbar
+
+// =========================================================================
+
+// start shop page
+document.querySelectorAll(".product-nav .right .drop-down .btn-drop").forEach((btn) => {
+    btn.addEventListener("click", e => {
+        e.target.classList.toggle("clicked");
+        e.target.nextElementSibling.classList.toggle("show");
+    });
+});
+   
