@@ -52,4 +52,23 @@ document.querySelectorAll(".product-nav .right .drop-down .btn-drop").forEach((b
         e.target.nextElementSibling.classList.toggle("show");
     });
 });
+
+// start scroll to top action
+document.addEventListener("scroll", () => {
+    let scrollTop = document.documentElement.scrollTop;
+    let scrollTopButton = document.querySelector(".scroll-top");
+    if (localStorage.getItem("scroll")) {
+       
+            if (scrollTop >=400) {
+                scrollTopButton.style.display = "flex";
+            } else {
+                scrollTopButton.style.display = "none";
+            }
+       
+    } 
+    scrollTopButton.addEventListener("click", () => {
+            document.documentElement.scrollTop = 0;
+    })
+})
+// end scroll to top action
    
