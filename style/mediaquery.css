@@ -153,7 +153,23 @@
     padding: 7px 15px;
 }
 /* end end nav */
+
+/* start contact-us page */
+.contact-us{
+    padding: 7px 15px;
 }
+.contact-us .box1{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 40px;
+}
+.contact-us .box1 .map .google-mapp iframe{
+    width: 100%;
+}
+/* end contact-us page */
+}
+
+
  @media(max-width:772px){
     .container-shop{
         padding: 7px 15px;
